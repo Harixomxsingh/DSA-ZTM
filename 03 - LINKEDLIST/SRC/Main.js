@@ -21,9 +21,21 @@ class LinkedList {
     // return the linkedlist
     return this;
   }
+  // prepend method
+  prepend(value) {
+    let newNode = {
+      value: value,
+      next: null,
+    };
+    newNode.next = this.head;
+    this.head = newNode;
+    this.length++;
+    return this;
+  }
 }
 
 let list = new LinkedList(10);
 list.append(11);
 list.append(12);
+list.prepend(9);
 console.log(list);

@@ -1,5 +1,12 @@
 // singlyLinkedList
 
+// we can also create a node class and use all the time though its not a beginner friendly
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
 class LinkedList {
   constructor(value) {
     this.head = {
@@ -11,10 +18,11 @@ class LinkedList {
   }
   // append method
   append(value) {
-    let newNode = {
-      value: value,
-      next: null,
-    };
+    // let newNode = {
+    //   value: value,
+    //   next: null,
+    // };
+    let newNode = new Node(value);
     this.tail.next = newNode;
     this.tail = newNode;
     this.length++;
@@ -37,5 +45,7 @@ class LinkedList {
 let list = new LinkedList(10);
 list.append(11);
 list.append(12);
+// after add node class
+list.append(13);
 list.prepend(9);
 console.log(list);

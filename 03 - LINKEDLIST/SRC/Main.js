@@ -40,6 +40,16 @@ class LinkedList {
     this.length++;
     return this;
   }
+  // print all function
+  printAll(value) {
+    let arr = [];
+    let current = this.head;
+    while (current !== null) {
+      arr.push(current.value);
+      current = current.next;
+    }
+    return arr;
+  }
 }
 
 let list = new LinkedList(10);
@@ -48,4 +58,5 @@ list.append(12);
 // after add node class
 list.append(13);
 list.prepend(9);
+console.log(list.printAll());
 console.log(list);

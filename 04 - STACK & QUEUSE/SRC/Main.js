@@ -30,12 +30,22 @@ class Stack {
     this.length++;
     return this;
   }
-  pop() {}
+  pop() {
+    // if there is not any item
+    if (!this.top) {
+      return null;
+    }
+    const holdingPointer = this.top;
+    this.top = this.top.next;
+    this.length--;
+    return this;
+  }
 }
 
 let myStack = new Stack();
 myStack.push("google");
 myStack.push("Udemy");
 myStack.push("Discord");
-console.log(myStack.peek());
+myStack.pop();
+// console.log(myStack.peek());
 console.log(myStack);

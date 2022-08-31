@@ -1,3 +1,6 @@
+// stack
+
+// this is linked list method
 class Node {
   constructor(value) {
     this.value = value;
@@ -51,4 +54,28 @@ myStack.push("Udemy");
 myStack.push("Discord");
 myStack.pop();
 // console.log(myStack.peek());
-console.log(myStack);
+// console.log(myStack);
+
+// array method of stack
+
+class ArrayStack {
+  constructor() {
+    this.Array = [];
+  }
+  peek() {
+    return this.Array[this.Array.length - 1];
+  }
+  push(value) {
+    this.Array.push(value);
+    return this;
+  }
+  pop() {
+    this.Array.pop();
+  }
+}
+
+let arrStack = new ArrayStack();
+arrStack.push("google");
+arrStack.push("Youtube");
+arrStack.pop();
+console.log(arrStack);

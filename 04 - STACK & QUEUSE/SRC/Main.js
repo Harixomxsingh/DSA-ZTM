@@ -35,6 +35,9 @@ class Stack {
     if (!this.top) {
       return null;
     }
+    if (this.length === 0) {
+      this.bottom = null;
+    }
     const holdingPointer = this.top;
     this.top = this.top.next;
     this.length--;

@@ -52,9 +52,9 @@ let myStack = new Stack();
 myStack.push("google");
 myStack.push("Udemy");
 myStack.push("Discord");
-myStack.pop();
+// myStack.pop();
 // console.log(myStack.peek());
-// console.log(myStack);
+console.log(myStack);
 
 // array method of stack
 
@@ -78,4 +78,4 @@ let arrStack = new ArrayStack();
 arrStack.push("google");
 arrStack.push("Youtube");
 arrStack.pop();
-console.log(arrStack);
+// console.log(arrStack);

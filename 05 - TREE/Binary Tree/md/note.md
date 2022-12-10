@@ -46,3 +46,35 @@ we are doubling the next child
 - lookup O(log N)
 - insert O(log N)
 - delete O(log N)
+
+## Binary Search Tree
+
+Binary Search tree is really good for searching
+
+- lookup O(log N)
+- insert O(log N)
+- delete O(log N)
+
+### rule
+
+the binary search tree have this rule
+
+- the right side always contains bigger number than the parent
+- the left side contains lesser number
+
+![binary search tree](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1200px-Binary_search_tree.svg.png)
+
+> go to visulAlgo website and see how binary search tree work
+> [visulAlgo](https://www.visualgo.net/en)
+
+### pros and cons
+
+## Pros
+
+- Better than O(n)
+- Ordered
+- Flexible Size
+
+## cons
+
+- No O(1) operations
